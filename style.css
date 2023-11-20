@@ -1,0 +1,765 @@
+/* josefin-sans-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/josefin-sans-v32-latin-300.eot'); /* IE9 Compat Modes */
+    src: url('fonts/josefin-sans-v32-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/josefin-sans-v32-latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('fonts/josefin-sans-v32-latin-300.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('fonts/josefin-sans-v32-latin-300.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('fonts/josefin-sans-v32-latin-300.svg#JosefinSans') format('svg'); /* Legacy iOS */
+}
+  /* josefin-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/josefin-sans-v32-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/josefin-sans-v32-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/josefin-sans-v32-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('fonts/josefin-sans-v32-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('fonts/josefin-sans-v32-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('fonts/josefin-sans-v32-latin-regular.svg#JosefinSans') format('svg'); /* Legacy iOS */
+}
+  /* josefin-sans-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('fonts/josefin-sans-v32-latin-600.eot'); /* IE9 Compat Modes */
+    src: url('fonts/josefin-sans-v32-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/josefin-sans-v32-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('fonts/josefin-sans-v32-latin-600.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('fonts/josefin-sans-v32-latin-600.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('fonts/josefin-sans-v32-latin-600.svg#JosefinSans') format('svg'); /* Legacy iOS */
+}
+  /* josefin-sans-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/josefin-sans-v32-latin-700.eot'); /* IE9 Compat Modes */
+    src: url('fonts/josefin-sans-v32-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/josefin-sans-v32-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('fonts/josefin-sans-v32-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('fonts/josefin-sans-v32-latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('fonts/josefin-sans-v32-latin-700.svg#JosefinSans') format('svg'); /* Legacy iOS */
+}
+
+
+/* Цвета и не только */
+
+:root {
+    font-size: 62.5%;
+    --downloadbuttoon-color: #FFFFFF;
+    --textcolor-color:#FFFFFF;
+    --background1-color:#5956E9;
+    --background2-color:#FFFFFF; 
+    --heading1-color: #5956E9 ;
+    --heading2-color:#232233;
+    --paragraph-color:#6C6C72;
+    --headingweight-font-weight:600; 
+        --paragraphweigt-font-weight:400;
+    --paragraphsize-font-size: 1.6rem; 
+    --paragraphfontstyle-font-style: normal;
+    --paragraphlineheight-line-height: 2.4rem;
+}
+
+/* Хедер */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Кнопка скачать */
+.downloadbutton__link {
+    color: var(--downloadbuttoon-color);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.header__downloadbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 76px;
+    height: 34px;
+    flex-shrink: 0;
+    background-color: var(--background1-color);
+    border-radius: 0.3rem;
+}
+
+
+/* Основные (main) */
+
+
+
+/* Страница с ссылками на скачивание */
+
+.downloadpage {
+    width: 37.5rem;
+    height: 122.7rem;
+    display: flex;
+    background-image: url(images/Background\ Image\ \(2\).png);
+}
+
+.downloadpage__container {
+    width: 32.3rem;
+    height: 31.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    background-color: var(--background2-color);
+    margin-left:1.6rem;
+    margin-right: 3.6rem;
+    margin-top: 20.8rem;
+    
+}
+
+.downloadpage__paragraph {
+    color: var(--paragraph-color);
+    margin-left: 1.8rem;
+    margin-right: 1.2rem;
+    width: 29.3rem;
+    height: 6.6rem;
+    margin-bottom: 3rem;
+}
+.downloadpage__heading1{
+    display: inline-block;
+    font-family: 'Josefin Sans',sans-serif;
+    width: 26.2rem;
+    height: 7.1rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    text-transform: uppercase;
+    color: var(--heading1-color);
+    word-wrap: break-word;
+    margin-left: 1.8rem;
+    margin-top: 3rem;
+    margin-right: 4.3rem;
+    
+}
+
+.downloadpage__heading2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3rem;
+    text-transform: uppercase;
+    margin-left: 1.8rem;
+    margin-top: 0;
+}
+.downloadpage__img-google {
+    margin-left: 1.8rem;
+    margin-right: 1.017rem;
+}
+/* Значение для параграфов */
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: var(--paragraphweigt-font-weight);
+    font-size: var(--paragraphsize-font-size);
+    color: var(--paragraph-color);
+    font-style: var(--paragraphfontstyle-font-style);
+    line-height: var(--paragraphlineheight-line-height);
+}
+
+/* Страница about */
+
+#About {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: var(--headingweight-font-weight);
+    font-size: 2.5rem;
+    font-style: normal;
+    line-height: 3.75rem; 
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 1.8rem;
+}
+
+
+.aboutpage {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    height: 122.7rem;
+}
+
+.aboutpage__paragraph{
+    margin-top: 0rem;
+    width: 30rem;
+    height: 7rem;
+    margin-left: 2.2rem;
+    margin-right: 2.1rem;
+    text-align: center;
+}
+
+.aboutpage__item {
+    display: block;
+    width: 34.3rem;
+    height: 11rem;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--background2-color)
+}
+
+.aboutpage__heading3 {
+    color: var(--heading2-color);
+    font-family: 'Josefin Sans',sans-serif;
+    height: 3rem;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3rem;
+    text-transform: uppercase;
+    margin-top: 0rem;
+    margin-bottom: 0.3rem;
+}
+
+.aboutpage__item-paragraph {
+    width: 26.6rem;
+    height: 4.9rem;
+    margin: 0rem;
+}
+
+/* Страница features */
+
+.featurespage {
+    height: 223rem;
+    background-image: url(images/Rectangle\ 23.png);
+}
+
+.featurespage__heading2 {
+    display: block ;
+    color:var(--textcolor-color);
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.75rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 6rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+}
+
+.featurespage p {
+    color: var(--textcolor-color);
+}
+.featurespage__paragraph-main {
+    width: 30rem;
+    height: 7rem;
+    text-align: center;
+    margin-left: 3.8rem;
+    margin-right: 3.7rem;
+    margin-top: 1.8rem;
+    margin-bottom: 3.2rem;
+}
+
+.featurespage__heading3 {
+    display: block ;
+    color:var(--textcolor-color);
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 6rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+    margin-top: 3rem;
+    padding-top: 0rem;
+}
+
+.featurespage__img {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-left: 16.3rem;
+    margin-right: 16.2rem;
+    flex-shrink: 0;
+}
+
+.featurespage__paragraph {
+    width: 22.3rem;
+    height: 4.3rem;
+    margin-left: 7.6rem;
+    margin-right: 7.6rem;
+    text-align: center;
+    margin-top: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+/* .featurespage__img-app {
+} */
+
+
+/* Страница statistic */
+
+.statisticpage {
+    width: 37.5rem;
+    height: 96.4rem;
+    background-color: var(--background2-color);
+}
+
+.statistic__main-container{
+    display: flex
+}
+.statisticpage__container{
+    display: flex;
+    margin-left: 1.8rem;
+    width: 9.6rem;
+    height: 10rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    background-color: var(--background1-color);
+    margin-top: 6rem;
+    flex-wrap: wrap;
+}
+
+.statisticspage__heading2 {
+    width: 28.8rem;
+    height: 7.5rem;
+    margin-top: 10.3rem;
+    margin-left: 1.6rem;
+    margin-right: 7.1rem;
+    margin-bottom: 1.8rem;
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.75rem;
+    text-transform: uppercase;
+}
+
+.statisticpage__paragraph-main {
+    width: 32.9rem;
+    height: 7.3rem;
+    margin-left: 1.6rem;
+    margin-right: 3rem;
+    margin-top: 0rem;
+}
+
+.statisticspage__img-google{
+    margin-left: 1.6rem;
+    margin-right: 2.5rem;
+}
+
+.statisticspage__img-apple{
+    margin-left: 0rem;
+    margin-right: 3.4rem;
+}
+
+.statisticpage__img-icons{
+    display: flex;
+    width: 18px;
+    height: 18px;
+    margin-left: 3.9rem;
+    margin-right: 3.9rem;
+    margin-top: 1.1rem;
+    flex-shrink: 0;
+}
+
+
+
+
+.statisticpage__paragraph-numbers{
+    display: flex;
+    color:var(--textcolor-color);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 0rem;
+}
+
+.statisticpage__paragraph-text {
+    margin-top: 0rem;
+    padding-bottom: 1.2rem;
+    color: var(--textcolor-color);
+}
+#downloads__text{
+    margin: 0;
+    padding: 0;
+    margin-left: 0.8rem;
+}
+
+#like__text {
+    margin-left: 3.3rem;
+}
+
+#rating__text {
+    margin-left: 0.3rem;
+}
+
+#rating__number {
+    margin-left: 2.5rem;
+}
+
+/* Страница howtouse */
+
+.howtousepage {
+    display: block;
+    width: 37.5rem;
+    height: 49.1rem;
+    background: linear-gradient(to bottom,var(--background1-color) 72%, var(--background2-color) 28%);
+    
+}
+
+
+.howtousepage__heading2 {
+    display: block;
+    width: 28.1rem;
+    height: 7.1rem;
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.75rem;
+    text-transform: uppercase;
+    color:var(--textcolor-color);
+    text-align: center;
+    margin-left: 4.7rem;
+    padding-top: 6rem;
+    margin-bottom: 4rem; ;
+}
+
+.howtousepage__paragraph {
+    color: var(--textcolor-color);
+    text-align: center;
+    width: 30rem;
+    height: 7rem;
+    margin-left: 3.8rem;
+    margin-right: 3.7rem;
+    margin-top: 0rem;
+}
+
+
+/* Страница customers */
+
+.customerspage {
+    width: 37.5rem;
+    height: 58.8rem;
+    background-image: url(images/Rectangle\ 23.jpg);
+    display: block;
+}
+
+.customerspage__heading2 {
+    width: 31.5rem;
+    height: 3.8rem;
+    color: var(--textcolor-color);
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.75rem;
+    text-transform: uppercase;
+    padding-top: 6rem;
+    margin-left: 3rem;
+    margin-bottom: 1.8rem;
+}
+
+.customerspage__paragraph-main {
+    width: 30rem;
+    height: 7rem;
+    color: var(--textcolor-color);
+    text-align: center;
+    margin-left: 3.8rem;
+    margin-top: 0rem;
+    margin-bottom: 3.2rem;
+}
+
+.customerspage__name {
+    display: flex;
+    justify-content: center;
+    color: var(--heading2-color);
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.75rem;
+    text-transform: uppercase;
+    margin-top: 1.2rem;
+    margin-bottom: 0rem;
+}
+
+.customerspage__container {
+    background-color: var(--background2-color);
+    width: 34.3rem;
+    height: 25rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.24);
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+}
+.customerspage__post{
+    color: var(--heading2-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+
+}
+.customerspage__photo{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    padding-top: 2rem;
+    margin-left: 14.65rem;
+}
+blockquote{
+    margin: 0;
+}
+.customerspage__blockquote {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: 7rem;
+    margin: 0;
+    margin: 1.35rem;
+}
+
+#customerspage__container-main {
+    position: relative;
+    z-index: 2;
+}
+
+#customerspage__container-notmain1 {
+    height: 21.5rem;
+    position: absolute;
+    left: 7.9rem;
+    margin-top: -23.5rem;
+    z-index: 1;
+}
+
+#customerspage__container-notmain2 {
+    height: 21.5rem;
+    position: absolute;
+    right: 7.9rem;
+    margin-top: -23.5rem;
+    z-index: 1;
+}
+
+#customerspage__container-notmain3 {
+    height: 21.5rem;
+    position: absolute;
+    left: 7.9rem;
+    margin-top: -23.5rem;
+    z-index: 1;
+}
+
+#customerspage__container-notmain4 {
+    height: 21.5rem;
+    position: absolute;
+    right: 7.9rem;
+    margin-top: -23.5rem;
+    z-index: 1;
+}
+
+/* страница blog */
+
+.blogpage {
+    width: 37.5rem;
+}
+
+.blogpage__heading2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.75rem;
+    text-transform: uppercase;
+    color: var(--heading2-color);
+    padding-top: 4rem;
+    margin-bottom: 1.8rem;
+}
+
+.blogpage__paragraph-main{
+    max-width: 30rem;
+    min-height: 7rem;
+    margin: auto;
+    text-align: center;
+}
+
+.blogpage__container {
+    width: 34.3rem;
+    height: 48.2rem;
+    border-radius: 1rem;
+    background-color: var(--background2-color);
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+    margin: auto;
+    margin-bottom: 4rem;
+}
+.blogpage__heading3 {
+    max-width: 31.5rem;
+    color: var(--heading2-color);
+    font-family: 'Josefin Sans';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3rem;
+    text-transform: uppercase;
+    margin-left: 1.8rem;
+}
+.blogpage__paragraph {
+    min-width: 32.5rem;
+    margin-left: 1.8rem;
+}
+
+.blogpage__link {
+    color: var(--heading1-color);
+    font-family: 'Josefin Sans';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-left: 1.8rem;
+}
+
+.blogpage__contacts{
+    width: 34.3rem;
+    height: 31rem;
+    margin-left: 1.6rem;
+    border-radius: 1rem;
+    background: var(--background2-color);
+}
+
+
+.contacts__gmail {
+    color: var(--heading2-color);
+    font-family: 'Josefin Sans';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3rem;
+    text-transform: uppercase;
+}
+
+
+.contacts__phone {
+    color: var(--heading2-color);
+    font-family: 'Josefin Sans';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Страница футер  */
+
+
+.footer {
+    width: 37.5rem;
+    height: 101rem;
+    background: var(--heading2-color);
+}
+
+.logo__container {
+    margin-left: 1.6rem;
+}
+
+.logo__heading {
+    color: var(--textcolor-color);
+    font-family: 'Josefin Sans';
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.725rem;
+    text-transform: uppercase;
+    padding-top: 22rem;
+    margin-bottom: 0rem;
+}
+
+.logo__paragraph {
+    max-width: 33.5rem;
+    color: var(--textcolor-color);
+    margin-top: 0rem;
+}
+
+.quicklink__container {
+    margin-left: 1.6rem;
+}
+
+.quicklink__heading3 {
+    color: var(--textcolor-color);
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.75rem;
+    text-transform: uppercase;
+    margin-bottom: 1.1rem;
+}
+
+.quicklink__link{
+    display: block;
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--textcolor-color);
+    margin-bottom: 1.1rem;
+    text-decoration: none;
+}
+
+
+.newsletter__container{
+    margin-left: 1.6rem;
+}
+
+.newsletter__heading3{
+    margin-top: 6rem;
+    color: var(--textcolor-color);
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.75rem;
+    text-transform: uppercase;
+    margin-bottom: 0rem;
+}
+
+.newsletter__paragraph{
+    margin-top: 1.1rem;
+    max-width: 30rem;
+    color: var(--textcolor-color);
+}
+
+.copyright__hr {
+    width: 34.3rem;
+    height: 1px;
+    background: var(--background2-color);
+}
+
+.copyright__text {
+    color: var(--textcolor-color);
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 1.28rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
