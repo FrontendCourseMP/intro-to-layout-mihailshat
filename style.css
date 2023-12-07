@@ -54,6 +54,8 @@
 
 /* Цвета и не только */
 
+
+
 :root {
     font-size: 62.5%;
     --downloadbuttoon-color: #FFFFFF;
@@ -68,6 +70,10 @@
     --paragraphsize-font-size: 1.6rem; 
     --paragraphfontstyle-font-style: normal;
     --paragraphlineheight-line-height: 2.4rem;
+}
+
+*{
+    box-sizing: border-box; 
 }
 
 /* Хедер */
@@ -89,8 +95,6 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-}
-.header__downloadbutton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +114,7 @@
 
 .downloadpage {
     width: 37.5rem;
-    height: 122.7rem;
+    min-height: 122.7rem;
     display: flex;
     background-image: url(images/Background\ Image\ \(2\).png);
 }
@@ -132,14 +136,13 @@
     color: var(--paragraph-color);
     margin-left: 1.8rem;
     margin-right: 1.2rem;
-    width: 29.3rem;
+    min-width: 29.3rem;
     height: 6.6rem;
     margin-bottom: 3rem;
 }
 .downloadpage__heading1{
-    display: inline-block;
     font-family: 'Josefin Sans',sans-serif;
-    width: 26.2rem;
+    min-width: 26.2rem;
     height: 7.1rem;
     font-weight: 600;
     font-size: 2.5rem;
@@ -189,30 +192,38 @@ p {
     text-align: center;
     margin-top: 6rem;
     margin-bottom: 1.8rem;
+    max-height: 3.75rem;
 }
 
 
 .aboutpage {
     margin-left: 1.6rem;
     margin-right: 1.6rem;
-    height: 122.7rem;
+    min-height: 122.7rem;
 }
 
 .aboutpage__paragraph{
     margin-top: 0rem;
-    width: 30rem;
-    height: 7rem;
+    min-width: 30rem;
+    min-height: 7rem;
     margin-left: 2.2rem;
     margin-right: 2.1rem;
     text-align: center;
 }
 
+.aboutpage__list{
+    padding-left: 0;
+}
+
+
 .aboutpage__item {
-    display: block;
+    margin-bottom: 2rem;
+    list-style-type: none;
     width: 34.3rem;
     height: 11rem;
     flex-shrink: 0;
     border-radius: 10px;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
     background: var(--background2-color)
 }
 
@@ -238,7 +249,7 @@ p {
 /* Страница features */
 
 .featurespage {
-    height: 223rem;
+    min-height: 223rem;
     background-image: url(images/Rectangle\ 23.png);
 }
 
@@ -261,8 +272,8 @@ p {
     color: var(--textcolor-color);
 }
 .featurespage__paragraph-main {
-    width: 30rem;
-    height: 7rem;
+    min-width: 30rem;
+    min-height: 7rem;
     text-align: center;
     margin-left: 3.8rem;
     margin-right: 3.7rem;
@@ -291,14 +302,12 @@ p {
     display: flex;
     width: 50px;
     height: 50px;
-    margin-left: 16.3rem;
-    margin-right: 16.2rem;
-    flex-shrink: 0;
+    margin: auto;
 }
 
 .featurespage__paragraph {
-    width: 22.3rem;
-    height: 4.3rem;
+    min-width: 22.3rem;
+    min-height: 4.3rem;
     margin-left: 7.6rem;
     margin-right: 7.6rem;
     text-align: center;
@@ -314,15 +323,14 @@ p {
 
 .statisticpage {
     width: 37.5rem;
-    height: 96.4rem;
+    min-height: 96.4rem;
     background-color: var(--background2-color);
 }
 
-.statistic__main-container{
+.statisticpage__main-container{
     display: flex
 }
 .statisticpage__container{
-    display: flex;
     margin-left: 1.8rem;
     width: 9.6rem;
     height: 10rem;
@@ -333,7 +341,7 @@ p {
     flex-wrap: wrap;
 }
 
-.statisticspage__heading2 {
+.statisticpage__heading2 {
     width: 28.8rem;
     height: 7.5rem;
     margin-top: 10.3rem;
@@ -356,12 +364,12 @@ p {
     margin-top: 0rem;
 }
 
-.statisticspage__img-google{
+.statisticpage__img-google{
     margin-left: 1.6rem;
     margin-right: 2.5rem;
 }
 
-.statisticspage__img-apple{
+.statisticpage__img-apple{
     margin-left: 0rem;
     margin-right: 3.4rem;
 }
@@ -380,7 +388,7 @@ p {
 
 
 .statisticpage__paragraph-numbers{
-    display: flex;
+    margin-top: 0.8rem;
     color:var(--textcolor-color);
     font-size: 2rem;
     font-style: normal;
@@ -390,9 +398,9 @@ p {
     margin-bottom: 0rem;
 }
 
-.statisticpage__paragraph-text {
+.statisticpage__paragraph-text{
     margin-top: 0rem;
-    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
     color: var(--textcolor-color);
 }
 #downloads__text{
@@ -416,18 +424,16 @@ p {
 /* Страница howtouse */
 
 .howtousepage {
-    display: block;
     width: 37.5rem;
-    height: 49.1rem;
+    min-height: 49.1rem;
     background: linear-gradient(to bottom,var(--background1-color) 72%, var(--background2-color) 28%);
     
 }
 
 
 .howtousepage__heading2 {
-    display: block;
     width: 28.1rem;
-    height: 7.1rem;
+    min-height: 7.1rem;
     font-family: 'Josefin Sans',sans-serif;
     font-size: 2.5rem;
     font-style: normal;
@@ -438,14 +444,15 @@ p {
     text-align: center;
     margin-left: 4.7rem;
     padding-top: 6rem;
-    margin-bottom: 4rem; ;
+    margin-bottom: 4rem;
+    margin-top: 0rem;
 }
 
 .howtousepage__paragraph {
     color: var(--textcolor-color);
     text-align: center;
     width: 30rem;
-    height: 7rem;
+    min-height: 7rem;
     margin-left: 3.8rem;
     margin-right: 3.7rem;
     margin-top: 0rem;
@@ -456,14 +463,14 @@ p {
 
 .customerspage {
     width: 37.5rem;
-    height: 58.8rem;
+    min-height: 58.8rem;
     background-image: url(images/Rectangle\ 23.jpg);
     display: block;
 }
 
 .customerspage__heading2 {
-    width: 31.5rem;
-    height: 3.8rem;
+    min-width: 31.5rem;
+    min-height: 3.8rem;
     color: var(--textcolor-color);
     font-family: 'Josefin Sans',sans-serif;
     font-size: 2.5rem;
@@ -474,11 +481,12 @@ p {
     padding-top: 6rem;
     margin-left: 3rem;
     margin-bottom: 1.8rem;
+    margin-top: 0rem;
 }
 
 .customerspage__paragraph-main {
     width: 30rem;
-    height: 7rem;
+    min-height: 7rem;
     color: var(--textcolor-color);
     text-align: center;
     margin-left: 3.8rem;
@@ -517,9 +525,9 @@ p {
 
 }
 .customerspage__photo{
+    box-sizing: content-box;
     width: 5rem;
     height: 5rem;
-    display: flex;
     padding-top: 2rem;
     margin-left: 14.65rem;
 }
@@ -580,8 +588,7 @@ blockquote{
 }
 
 .blogpage__heading2{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-family: 'Josefin Sans',sans-serif;
     font-size: 2.5rem;
     font-style: normal;
@@ -598,6 +605,7 @@ blockquote{
     min-height: 7rem;
     margin: auto;
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .blogpage__container {
@@ -673,12 +681,13 @@ blockquote{
 
 .footer {
     width: 37.5rem;
-    height: 101rem;
+    min-height: 101rem;
     background: var(--heading2-color);
 }
 
 .logo__container {
     margin-left: 1.6rem;
+    margin-top: 0rem;
 }
 
 .logo__heading {
