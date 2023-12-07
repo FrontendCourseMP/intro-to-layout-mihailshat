@@ -58,6 +58,7 @@
 
 :root {
     font-size: 62.5%;
+    box-sizing: border-box;
     --downloadbuttoon-color: #FFFFFF;
     --textcolor-color:#FFFFFF;
     --background1-color:#5956E9;
@@ -72,9 +73,9 @@
     --paragraphlineheight-line-height: 2.4rem;
 }
 
-*{
+/* *{
     box-sizing: border-box; 
-}
+} */
 
 /* Хедер */
 
@@ -85,7 +86,7 @@
 }
 
 /* Кнопка скачать */
-.downloadbutton__link {
+.header__downloadbutton-link{
     color: var(--downloadbuttoon-color);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
@@ -122,8 +123,6 @@
 .downloadpage__container {
     width: 32.3rem;
     height: 31.8rem;
-    display: flex;
-    flex-wrap: wrap;
     flex-shrink: 0;
     background-color: var(--background2-color);
     margin-left:1.6rem;
