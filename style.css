@@ -117,15 +117,18 @@
 /* Страница с ссылками на скачивание */
 
 .downloadpage {
-    width: 37.5rem;
     min-height: 122.7rem;
     margin: auto;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     background-image: url(images/Background\ Image\ \(2\).png);
 }
 
 .downloadpage__container {
+    margin: auto;
     width: 32.3rem;
     height: 31.8rem;
     flex-shrink: 0;
@@ -177,6 +180,8 @@
 
 .downloadpage__img-phone{
     margin-left: 5.5rem;
+    max-width: 36rem;
+    margin-bottom: 12rem;
 }
 
 /* Значение для параграфов */
@@ -234,7 +239,6 @@ p {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    text-align: left;
     margin-bottom: 2rem;
     list-style-type: none;
     width: 34.3rem;
@@ -264,7 +268,7 @@ p {
     margin-bottom: 7.5rem;
 }
 .aboutpage__marker{
-
+    margin-top: 2rem;
 }
 .aboutpage__item-paragraph {
     width: 26.6rem;
@@ -469,8 +473,12 @@ p {
 /* Страница howtouse */
 
 .howtousepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    width: 37.5rem;
+    min-width: 37.5rem;
     min-height: 49.1rem;
     background: linear-gradient(to bottom,var(--background1-color) 72%, var(--background2-color) 28%);
     
@@ -655,6 +663,8 @@ blockquote{
 .blogpage {
     width: 37.5rem;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -719,11 +729,15 @@ blockquote{
 }
 
 .blogpage__contacts{
+    position: relative;
+    z-index: 2;
     width: 34.3rem;
     height: 31rem;
     margin-left: 1.6rem;
     border-radius: 1rem;
     background: var(--background2-color);
+    margin-bottom: -17.1rem;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
 }
 
 
@@ -735,10 +749,12 @@ blockquote{
     font-weight: 600;
     line-height: 3rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 
 .contacts__phone {
+    display: block;
     color: var(--heading2-color);
     font-family: 'Josefin Sans';
     font-size: 2rem;
@@ -747,13 +763,34 @@ blockquote{
     line-height: 3rem;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
+    margin-top: 2rem;
 }
 
+.blogpage__contacts-logoemail{
+    display: block;
+    margin: auto;
+}
+.blogpage__contacts-logophone{
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+}
+.blogpage__hr{
+    width: 11.7rem;
+    height: 0.4rem;
+    color: var(--heading2-color);
+    border: none;
+}
 /* Страница футер  */
 
 
 .footer {
-    width: 37.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    z-index: 1;
     margin: auto;
     min-height: 101rem;
     background: var(--heading2-color);
@@ -782,8 +819,19 @@ blockquote{
     margin-top: 0rem;
 }
 
+.logo__hr{
+    display: inline-block;
+    width: 0.1rem;
+    height: 2rem;
+    border: none;
+    background-color: var(--downloadbuttoon-color);
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
 .quicklink__container {
     margin-left: 1.6rem;
+    
 }
 
 .quicklink__heading3 {
@@ -832,10 +880,39 @@ blockquote{
     color: var(--textcolor-color);
 }
 
+.newsletter__button{
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--background1-color);
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.newsletter__input{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+#email{
+    width: 28.6rem;
+    height: 5rem;
+    border-radius: 4px;
+    text-align: left;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
 .copyright__hr {
     width: 34.3rem;
     height: 1px;
     background: var(--background2-color);
+    border: none;
+    margin-top: 6rem;
 }
 
 .copyright__text {
@@ -845,4 +922,14 @@ blockquote{
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    margin-bottom: 0rem;
+}
+
+.copyright__container{
+    display: flex;
+    justify-content: center;
+}
+
+.copyright__img{
+    margin-top: 1.18rem;
 }
