@@ -58,7 +58,6 @@
 
 :root {
     font-size: 62.5%;
-    box-sizing: border-box;
     --downloadbuttoon-color: #FFFFFF;
     --textcolor-color:#FFFFFF;
     --background1-color:#5956E9;
@@ -73,9 +72,9 @@
     --paragraphlineheight-line-height: 2.4rem;
 }
 
-/* *{
+*{
     box-sizing: border-box; 
-} */
+}
 
 /* Хедер */
 
@@ -85,6 +84,10 @@
     justify-content: space-between;
 }
 
+.header__buttonburger {
+    background: transparent;
+    border: none;
+}
 /* Кнопка скачать */
 .header__downloadbutton-link{
     color: var(--downloadbuttoon-color);
@@ -116,7 +119,9 @@
 .downloadpage {
     width: 37.5rem;
     min-height: 122.7rem;
+    margin: auto;
     display: flex;
+    flex-wrap: wrap;
     background-image: url(images/Background\ Image\ \(2\).png);
 }
 
@@ -169,6 +174,11 @@
     margin-left: 1.8rem;
     margin-right: 1.017rem;
 }
+
+.downloadpage__img-phone{
+    margin-left: 5.5rem;
+}
+
 /* Значение для параграфов */
 p {
     font-family: 'Josefin Sans', sans-serif;
@@ -198,7 +208,7 @@ p {
 .aboutpage {
     margin-left: 1.6rem;
     margin-right: 1.6rem;
-    min-height: 122.7rem;
+    min-height: 100rem;
 }
 
 .aboutpage__paragraph{
@@ -211,11 +221,20 @@ p {
 }
 
 .aboutpage__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-left: 0;
+    margin: auto;
 }
 
 
 .aboutpage__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
     margin-bottom: 2rem;
     list-style-type: none;
     width: 34.3rem;
@@ -237,8 +256,16 @@ p {
     text-transform: uppercase;
     margin-top: 0rem;
     margin-bottom: 0.3rem;
+    padding-top: 1.8rem;
 }
+.aboutpage__img-phone{
+    display: block;
+    margin: auto;
+    margin-bottom: 7.5rem;
+}
+.aboutpage__marker{
 
+}
 .aboutpage__item-paragraph {
     width: 26.6rem;
     height: 4.9rem;
@@ -298,7 +325,7 @@ p {
 }
 
 .featurespage__img {
-    display: flex;
+    display: block;
     width: 50px;
     height: 50px;
     margin: auto;
@@ -314,20 +341,39 @@ p {
     margin-bottom: 4rem;
 }
 
-/* .featurespage__img-app {
-} */
+.featurespage__img-app {
+    display: block;
+    margin: auto;
+    margin-top: -2rem;
+    margin-bottom: -3rem;
+}
 
 
 /* Страница statistic */
 
 .statisticpage {
+    margin: auto;
     width: 37.5rem;
     min-height: 96.4rem;
     background-color: var(--background2-color);
 }
-
+.statisticpage__link-google{
+    display: inline-block;
+    width: 14.9rem;
+    height: 4.7rem;
+}
+.statisticpage__link-apple{
+    display: inline-block;
+    width: 14.9rem;
+    height: 4.7rem;
+    margin-left: 2.5rem;
+}
 .statisticpage__main-container{
     display: flex
+}
+.statisticpage__img-phone{
+    margin-top: 6rem;
+    margin-left: 1.6rem;
 }
 .statisticpage__container{
     margin-left: 1.8rem;
@@ -423,6 +469,7 @@ p {
 /* Страница howtouse */
 
 .howtousepage {
+    margin: auto;
     width: 37.5rem;
     min-height: 49.1rem;
     background: linear-gradient(to bottom,var(--background1-color) 72%, var(--background2-color) 28%);
@@ -456,11 +503,20 @@ p {
     margin-right: 3.7rem;
     margin-top: 0rem;
 }
-
-
+.howtousepage__img-video{
+    position: relative;
+}
+.howtousepage__img-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
 /* Страница customers */
 
 .customerspage {
+    margin: auto;
     width: 37.5rem;
     min-height: 58.8rem;
     background-image: url(images/Rectangle\ 23.jpg);
@@ -580,11 +636,29 @@ blockquote{
     z-index: 1;
 }
 
+.customerspage__slider{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.slider__button{
+    background-color:var(--background2-color);
+    border-radius: 50%;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: none;
+    margin-right: 1rem;
+}
 /* страница blog */
 
 .blogpage {
     width: 37.5rem;
+    margin: auto;
 }
+
+
+
 
 .blogpage__heading2{
     text-align: center;
@@ -680,6 +754,7 @@ blockquote{
 
 .footer {
     width: 37.5rem;
+    margin: auto;
     min-height: 101rem;
     background: var(--heading2-color);
 }
