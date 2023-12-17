@@ -79,9 +79,43 @@
 /* Хедер */
 
 .header {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 4rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+
+}
+
+
+.header__container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--background2-color);
+    padding: 0.3rem;
+    border-radius:0.3rem ;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+    position: relative;
+}
+
+
+.header__logo{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%);
+    top: 50%;
+    margin-top: -3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 6rem;
+    border-radius: 0.5rem;
+    background-color: var(--background2-color);
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
 }
 
 .header__buttonburger {
@@ -117,6 +151,8 @@
 /* Страница с ссылками на скачивание */
 
 .downloadpage {
+    position: relative;
+    z-index: 1;
     min-height: 122.7rem;
     margin: auto;
     display: flex;
@@ -238,7 +274,6 @@ p {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: center;
     margin-bottom: 2rem;
     list-style-type: none;
     width: 34.3rem;
@@ -246,21 +281,23 @@ p {
     flex-shrink: 0;
     border-radius: 10px;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
-    background: var(--background2-color)
+    background: var(--background2-color);
+    flex-direction: row;
 }
 
 .aboutpage__heading3 {
     color: var(--heading2-color);
     font-family: 'Josefin Sans',sans-serif;
-    height: 3rem;
     font-size: 2rem;
     font-style: normal;
     font-weight: 600;
     line-height: 3rem;
     text-transform: uppercase;
-    margin-top: 0rem;
     margin-bottom: 0.3rem;
-    padding-top: 1.8rem;
+    margin-top: 1.8rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-left: 0;
 }
 .aboutpage__img-phone{
     display: block;
@@ -269,11 +306,14 @@ p {
 }
 .aboutpage__marker{
     margin-top: 2rem;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
 }
 .aboutpage__item-paragraph {
     width: 26.6rem;
     height: 4.9rem;
-    margin: 0rem;
+    margin: 0 auto;
+    margin-right: 1.8rem;
 }
 
 /* Страница features */
@@ -529,6 +569,7 @@ p {
     min-height: 58.8rem;
     background-image: url(images/Rectangle\ 23.jpg);
     display: block;
+    position: relative;
 }
 
 .customerspage__heading2 {
@@ -577,8 +618,7 @@ p {
     height: 25rem;
     border-radius: 1rem;
     box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.24);
-    margin-left: 1.6rem;
-    margin-right: 1.6rem;
+    margin: 0 1.6rem;
 }
 .customerspage__post{
     color: var(--heading2-color);
@@ -616,7 +656,7 @@ blockquote{
     height: 21.5rem;
     position: absolute;
     left: 7.9rem;
-    margin-top: -23.5rem;
+    top: 23.5rem;
     z-index: 1;
 }
 
@@ -624,7 +664,7 @@ blockquote{
     height: 21.5rem;
     position: absolute;
     right: 7.9rem;
-    margin-top: -23.5rem;
+    top: 23.5rem;
     z-index: 1;
 }
 
@@ -632,7 +672,7 @@ blockquote{
     height: 21.5rem;
     position: absolute;
     left: 7.9rem;
-    margin-top: -23.5rem;
+    top: 23.5rem;
     z-index: 1;
 }
 
@@ -640,7 +680,7 @@ blockquote{
     height: 21.5rem;
     position: absolute;
     right: 7.9rem;
-    margin-top: -23.5rem;
+    top: 23.5rem;
     z-index: 1;
 }
 
@@ -770,16 +810,17 @@ blockquote{
 .blogpage__contacts-logoemail{
     display: block;
     margin: auto;
+    margin-top: 2rem;
 }
 .blogpage__contacts-logophone{
     display: block;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 .blogpage__hr{
     width: 11.7rem;
     height: 0.4rem;
-    color: var(--heading2-color);
+    background-color: var(--heading2-color);
     border: none;
 }
 /* Страница футер  */
@@ -788,11 +829,12 @@ blockquote{
 .footer {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
     position: relative;
     z-index: 1;
     margin: auto;
-    min-height: 101rem;
+    padding-bottom: 2rem;
     background: var(--heading2-color);
 }
 
@@ -809,7 +851,7 @@ blockquote{
     font-weight: 700;
     line-height: 4.725rem;
     text-transform: uppercase;
-    padding-top: 22rem;
+    margin-top: 22rem;
     margin-bottom: 0rem;
 }
 
@@ -831,6 +873,8 @@ blockquote{
 
 .quicklink__container {
     margin-left: 1.6rem;
+    position: relative;
+    right: 9rem;
     
 }
 
@@ -908,7 +952,7 @@ blockquote{
     line-height: 2.4rem;
 }
 .copyright__hr {
-    width: 34.3rem;
+    width: 80%;
     height: 1px;
     background: var(--background2-color);
     border: none;

@@ -1,0 +1,142 @@
+main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+/* Задание 1 */
+
+.pitmondrian {
+    margin: 20px auto;
+    width: 600px;
+    height: 600px;
+    background: #ffffff;
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: 20% 40% 25% 15%;
+    grid-template-rows: 10% 30% 40% 20%;
+    box-shadow: 26px 17px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.mondrian {
+    border: 5px solid black;
+}
+
+.picture_1 {
+    border-radius: 10px 0 0 0;
+    grid-column: 1 / 3;
+}
+
+.picture_2 {
+    border-radius: 0 10px 0 0;
+    grid-column: 3/5;
+    background-color: yellow;
+}
+
+.picture_3 {
+    grid-column: 1/3;
+    grid-row: 2/4;
+    background-color: red;
+}
+
+.picture_4 {
+    grid-column: 3/5;
+    grid-row: 2/3;
+    background-color: yellow;
+}
+
+.picture_7 {
+    border-radius: 0 0 0 10px;
+    background-color: black;
+}
+
+.picture_9 {
+    grid-column: 3/5;
+    border-radius: 0 0 10px 0;
+}
+
+/* Задание 2 */
+
+.graphics {
+    margin: 20px auto;
+    width: 600px;
+    height: auto;
+    display: grid;
+    border: 4px solid black;
+    gap: 10px 10px;
+    border-radius: 20px;
+    grid-template-columns: repeat(7, 75px);
+    grid-template-rows: repeat(3, 180px);
+    grid-template-areas:
+        'sidebar graphics1__1 graphics1__1 graphics1__1 graphics1__1 graphics1__1 graphics1__1'
+        'sidebar graphics2__1 graphics2__1 graphics2__2 graphics2__2 graphics2__3 graphics2__3'
+        'sidebar graphics3__1 graphics3__1 graphics3__1 graphics3__2 graphics3__2 graphics3__2'
+    ;
+}
+
+.graphics1__1 {
+    grid-area: graphics1__1;
+}
+
+.graphics2__1 {
+    grid-area: graphics2__1;
+}
+
+.graphics2__2 {
+    grid-area: graphics2__2;
+}
+
+.graphics2__3 {
+    grid-area: graphics2__3;
+}
+
+.graphics3__1 {
+    grid-area: graphics3__1;
+}
+
+.graphics3__2 {
+    grid-area: graphics3__2;
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17.5px;
+}
+
+/* ЗАДАНИЕ 3  */
+
+.ram {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(8, 200px);
+    gap: 10px;
+}
+
+.ram>div {
+    display: grid;
+    grid-template-columns: [link] 1fr;
+    grid-template-rows: [link] 1fr;
+}
+
+
+
+.ram>div>img {
+    grid-area: link;
+    border-radius: 10px;
+}
+
+.ram>div>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    grid-area: link;
+}
