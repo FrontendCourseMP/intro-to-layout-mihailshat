@@ -160,7 +160,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-image: url(images/Background\ Image\ \(2\).png);
+    background-image: url(image/Background\ Image\ \(4\).png);
 }
 
 .downloadpage__container {
@@ -186,7 +186,6 @@
 .downloadpage__heading1{
     font-family: 'Josefin Sans',sans-serif;
     min-width: 26.2rem;
-    height: 7.1rem;
     font-weight: 600;
     font-size: 2.5rem;
     line-height: 3.75rem;
@@ -247,10 +246,21 @@ p {
 
 
 .aboutpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 1.6rem;
     margin-right: 1.6rem;
     min-height: 100rem;
 }
+
+
+#aboutpage__paragraph-not-phone{
+    display: none;
+}
+
+
 
 .aboutpage__paragraph{
     margin-top: 0rem;
@@ -320,7 +330,7 @@ p {
 
 .featurespage {
     min-height: 223rem;
-    background-image: url(images/Rectangle\ 23.png);
+    background-image: url(image/Rectangle\ 23\ \(1\).png);
 }
 
 .featurespage__heading2 {
@@ -337,6 +347,12 @@ p {
     padding-bottom: 0rem;
     margin-bottom: 0rem;
 }
+
+.featurespage__list{
+    padding-left: 0;
+}
+
+
 
 .featurespage p {
     color: var(--textcolor-color);
@@ -372,7 +388,7 @@ p {
     display: block;
     width: 50px;
     height: 50px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .featurespage__paragraph {
@@ -387,17 +403,22 @@ p {
 
 .featurespage__img-app {
     display: block;
-    margin: auto;
-    margin-top: -2rem;
-    margin-bottom: -3rem;
+    margin: 0 auto;
+    margin-bottom: 12rem;
+    width: 214px;
+    height: 468px;
+    border-radius: 40px;
+    box-shadow: 40px 40px 100px 0px rgba(24, 48, 63, 0.50);
 }
 
 
 /* Страница statistic */
 
 .statisticpage {
-    margin: auto;
-    width: 37.5rem;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
     min-height: 96.4rem;
     background-color: var(--background2-color);
 }
@@ -413,14 +434,16 @@ p {
     margin-left: 2.5rem;
 }
 .statisticpage__main-container{
-    display: flex
+    margin-left: 1.6rem;
+    display: flex;
+    gap: 1.8rem;
 }
 .statisticpage__img-phone{
     margin-top: 6rem;
     margin-left: 1.6rem;
 }
 .statisticpage__container{
-    margin-left: 1.8rem;
+    
     width: 9.6rem;
     height: 10rem;
     flex-shrink: 0;
@@ -517,7 +540,6 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
     min-width: 37.5rem;
     min-height: 49.1rem;
     background: linear-gradient(to bottom,var(--background1-color) 72%, var(--background2-color) 28%);
@@ -536,8 +558,6 @@ p {
     text-transform: uppercase;
     color:var(--textcolor-color);
     text-align: center;
-    margin-left: 4.7rem;
-    padding-top: 6rem;
     margin-bottom: 4rem;
     margin-top: 0rem;
 }
@@ -547,8 +567,6 @@ p {
     text-align: center;
     width: 30rem;
     min-height: 7rem;
-    margin-left: 3.8rem;
-    margin-right: 3.7rem;
     margin-top: 0rem;
 }
 .howtousepage__img-video{
@@ -564,11 +582,12 @@ p {
 /* Страница customers */
 
 .customerspage {
-    margin: auto;
-    width: 37.5rem;
     min-height: 58.8rem;
     background-image: url(images/Rectangle\ 23.jpg);
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -583,7 +602,6 @@ p {
     line-height: 3.75rem;
     text-transform: uppercase;
     padding-top: 6rem;
-    margin-left: 3rem;
     margin-bottom: 1.8rem;
     margin-top: 0rem;
 }
@@ -593,7 +611,7 @@ p {
     min-height: 7rem;
     color: var(--textcolor-color);
     text-align: center;
-    margin-left: 3.8rem;
+    
     margin-top: 0rem;
     margin-bottom: 3.2rem;
 }
@@ -701,17 +719,19 @@ blockquote{
 /* страница blog */
 
 .blogpage {
-    width: 37.5rem;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogpage__manycontainers{
     display: flex;
     flex-direction: column;
 }
 
 
-
-
 .blogpage__heading2{
-    text-align: center;
+
     font-family: 'Josefin Sans',sans-serif;
     font-size: 2.5rem;
     font-style: normal;
@@ -726,7 +746,7 @@ blockquote{
 .blogpage__paragraph-main{
     max-width: 30rem;
     min-height: 7rem;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 4rem;
 }
@@ -737,7 +757,7 @@ blockquote{
     border-radius: 1rem;
     background-color: var(--background2-color);
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 4rem;
 }
 .blogpage__heading3 {
@@ -752,7 +772,6 @@ blockquote{
     margin-left: 1.8rem;
 }
 .blogpage__paragraph {
-    min-width: 32.5rem;
     margin-left: 1.8rem;
 }
 
@@ -823,6 +842,12 @@ blockquote{
     background-color: var(--heading2-color);
     border: none;
 }
+
+    .blogpage__img-blog1,
+    .blogpage__img-blog2,
+    .blogpage__img-blog3{
+        object-fit: cover;
+    }
 /* Страница футер  */
 
 
@@ -836,6 +861,7 @@ blockquote{
     margin: auto;
     padding-bottom: 2rem;
     background: var(--heading2-color);
+    padding-top: 22rem;
 }
 
 .logo__container {
@@ -851,7 +877,6 @@ blockquote{
     font-weight: 700;
     line-height: 4.725rem;
     text-transform: uppercase;
-    margin-top: 22rem;
     margin-bottom: 0rem;
 }
 
@@ -873,8 +898,7 @@ blockquote{
 
 .quicklink__container {
     margin-left: 1.6rem;
-    position: relative;
-    right: 9rem;
+    
     
 }
 
@@ -977,3 +1001,671 @@ blockquote{
 .copyright__img{
     margin-top: 1.18rem;
 }
+
+.header__contacts{
+    display: none;
+}
+
+.header__contacts-email{
+    display: none;
+}
+
+.header__contacts-phone{
+    display: none;
+}
+.header__nav>a,
+.header__nav2>a{
+    display: none;
+    color: var(--heading2-color);
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#aboutpage__item-apragraphdekstop{
+    display: none;
+}
+
+@media screen and (min-width:376px) {
+    .downloadpage{
+        background-image: url(image/Background\ Image\ \(5\).png);
+    }
+    .featurespage{
+        background-image: url(image/Rectangle\ 23\ \(2\).png);
+    }
+    .customerspage{
+        background-image: url(image/Rectangle\ 23\ \(4\).png);
+    }
+}
+
+@media screen and (min-width:769px) {
+    .downloadpage{
+        background-image: url(image/Background\ Image\ \(3\).png);
+    }
+    
+    .featurespage{
+        background-image: url(image/Rectangle\ 14.png);
+    }
+    .customerspage{
+        background-image: url(image/Rectangle\ 14\ \(1\).png);
+    }
+}
+
+
+@media screen and (min-width: 767px) {
+    
+    .header__contacts{
+        width: 68.8rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 4.8rem;
+        margin: 0 auto 3.5rem auto;
+    }
+    
+    .header__contacts-email{
+        display:flex;
+        align-items: center;
+        gap: 1.6rem;
+        text-decoration: none;
+    }
+    .header__contacts-email>p{
+        color: var(--textcolor-color); 
+        font-family: 'Josefin Sans' ,sans-serif;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.4rem;
+        text-decoration: none;
+    }
+    .header__contacts-phone{
+        display:flex;
+        align-items: center;
+        gap: 1.6rem;
+        text-decoration: none;
+    }
+    .header__contacts-phone>p{
+        color: var(--textcolor-color); 
+        font-family: 'Josefin Sans' ,sans-serif;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.4rem;
+        text-decoration: none;
+    }
+
+    .header__messengers{
+        display: flex;
+        margin-left: auto;
+        gap: 3rem;
+    }
+
+    .header__container{
+        margin: 0 auto;
+        width: 68.8rem;
+        height: 6rem;
+    }
+    
+    .header__logo{
+        width: 20rem;
+        height: 9rem;
+        top: 25%;
+    }
+
+    .header__logo>img{
+        width: 16.7rem;
+        height: 2.8rem;
+    }
+
+    .header__downloadbutton-link{
+        width: 15.8rem;
+        height: 5rem;
+        font-size: 2rem;
+    }
+
+
+    .downloadpage{
+        padding-top: 15rem;
+        min-height: 102.4rem;
+        flex-direction: row;
+    }
+
+    .downloadpage__img-phone{
+        width: 25.9rem;
+        height: 42.3rem;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+
+    .downloadpage__container{
+        width: 35.6rem;
+        height: 31.8rem;
+        margin: 0 0;
+        margin-top: 0;
+        margin-right: 9rem;
+    }
+
+    .downloadpage__heading1{
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 47.25px; 
+    margin: 0 0;
+    margin-left: 1.8rem;
+    margin-top: 1.4rem;
+    margin-bottom: 0.6rem;
+    }
+    .downloadpage__img-google,
+    .downloadpage__img-apple{
+        width: 15rem;
+        height: 4.5rem;
+    }
+
+    #About{
+        font-size: 3.125rem;
+        font-weight: 700;
+        line-height: 4.725rem;
+    }
+
+
+    .aboutpage{
+        min-height: 80rem;
+    }
+
+    .aboutpage__container-imglist{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .aboutpage__paragraph{
+        display: none;
+    }
+
+    #aboutpage__paragraph-not-phone{
+        display: block;
+        width: 45rem;
+        margin-bottom: 6rem;
+    }
+
+    .aboutpage__img-phone{
+        margin-bottom: 4rem;
+    }
+
+
+    .featurespage{
+        min-height: 136.6rem;
+    }
+
+
+    .featurespage__list{
+        margin: 0 auto;
+        width: 76.8rem;
+        list-style: none;
+        display: grid;
+        grid-template-areas: 
+        'q q q'
+        'w e r'
+        't e l'
+        'u u u'
+        ;
+        gap: 1.8rem;
+    }
+
+    .featurespage__list>li{
+        width: 23rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.2rem;
+    }
+    .featurespage__list>li>h3{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    .featurespage__list>li>p{
+        display: inline-block;
+        margin: 0;
+        padding: 0; 
+    }
+    .featurespage__list>li>img{
+        margin: 0 0;
+
+    }
+
+    .featurespage__items1{
+        grid-area: q;
+        place-self: center;
+        align-items: center;
+    }
+
+    .featurespage__items2{
+        grid-area: w;
+        align-items: end;
+        place-self: center;
+
+    }
+    .featurespage__items3{
+        grid-area: t;
+        align-items: end;
+        place-self: center;
+        
+
+    }
+    .featurespage__items4{
+        place-self: center;
+
+        grid-area: e;
+        position: relative;
+        left: 1.6rem;
+    }
+    .featurespage__items5{
+        grid-area: r ;
+        align-items: start;
+        place-self: center;
+
+    }
+    .featurespage__items6{
+        grid-area: l;
+        align-items: start;
+        place-self: center;
+    }
+    .featurespage__items7{
+        grid-area: u;
+        place-self: center;
+        align-items: center;
+    }
+    .featurespage__items5>h3,
+    .featurespage__items5>p,
+    .featurespage__items6>h3,
+    .featurespage__items6>p{
+        text-align: left;
+    }
+
+    .featurespage__items3>h3,
+    .featurespage__items3>p,
+    .featurespage__items2>h3,
+    .featurespage__items2>p{
+        text-align: right;
+    }
+
+    .featurespage__heading2{
+        padding-top: 12rem;
+    }
+    
+
+    .statisticpage{
+        flex-direction: row;
+        min-height: 69.3rem;
+    }
+    .statisticpage__heading2{
+        margin-top: 0;
+        font-size: 3.125rem;
+        font-weight: 700;
+        line-height: 4.725rem;
+    }
+    .statisticpage__paragraph-main{
+        margin-bottom: 4rem;
+    }
+
+
+    .howtousepage{
+        background: linear-gradient(to bottom,var(--background1-color) 60%, var(--background2-color) 40%);
+        padding-top: 4rem;
+        padding-bottom: 15.9rem;
+    }
+
+    .howtousepage__heading2{
+        font-size: 3.125rem;
+        font-weight: 700;
+        line-height: 4.725rem;
+        width: 35.7rem;
+    }
+
+    .howtousepage__img{
+        width: 57rem;
+        height: 23.1rem;
+    }
+
+    .customerspage__heading2{
+        font-size: 3.125rem;
+        font-weight: 700;
+        line-height: 4.725rem;
+    }
+
+    .customerspage__container{
+        width: 45rem;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .customerspage__photo{
+        margin: 0;
+    }
+    .customerspage__paragraph-main{
+        width: 45rem;
+    }
+
+    .blogpage{
+        padding-bottom: 19.5rem;
+    }
+
+    .blogpage__container{
+        width: 21.3rem;
+        min-height: 63.3rem;
+        border-radius: 1rem;
+    }
+
+    .blogpage__img-blog1,
+    .blogpage__img-blog2,
+    .blogpage__img-blog3{
+        width: 21rem;
+        height: 22.8rem;
+    }
+    
+    .blogpage__manycontainers{
+        flex-direction: row;
+        gap: 2.4rem;
+    }
+    
+    .blogpage__contacts{
+        width: 68.8rem;
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -27rem;
+    }
+
+    .blogpage__contacts-logoemail{
+        margin: 0;
+        margin-right: 1.7rem;
+    }
+    
+    .blogpage__contacts-logophone{
+        margin: 0;
+        margin-right: 1.7rem;
+    }
+    .blogpage__hr{
+        width: 1px;
+        height: 106px;
+        margin: 0 3rem;
+    }
+
+    .contacts__phone{
+        margin: 0 ;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        text-transform: lowercase;
+    }
+
+    .contacts__gmail{
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        text-transform: lowercase;
+    }
+    .footer-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .logo__container{
+        grid-column: 1/2;
+    }
+    .quicklink__container{
+        grid-column: 2/3;
+    }
+
+    .logo__hr{
+        margin: 0 1rem;
+    }
+    .newsletter__heading3,
+    .quicklink__heading3,
+    .logo__heading{
+        margin-top: 0rem;
+    }
+    #email{
+        width: 16.1rem;
+    }
+    .quicklink__heading3{
+        
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header__container{
+        width: 117rem;
+
+    }
+    
+    .header__nav>a,
+    .header__nav2>a{
+        display: inline;
+    }
+
+    .header__buttonburger{
+        display: none;
+    }
+
+    .header__nav{
+        display: flex;
+        margin-left: 5.2rem;
+        gap: 3.8rem;
+    }
+    .header__nav-link1{
+        color: var(--heading1-color) !important;
+        text-decoration: underline !important;
+    }
+
+    .header__nav2{
+        display: flex;
+        gap: 4rem;
+        margin-left: 32.9rem;
+    }
+
+    .header__contacts{
+        width: 117rem;
+    }
+
+    .downloadpage{
+        padding-top: 30rem;
+        padding-bottom: 8.3rem;
+    }
+
+    .downloadpage__container{
+        width: 57rem;
+        height: 43.2rem;
+        padding: 4rem 2.3rem 4rem 3rem;
+        margin-right: 17.4rem;
+    }
+
+    .downloadpage__img-phone{
+        max-width: none;
+        height: 72.5rem;
+        width: 44.37rem
+    }
+
+    .downloadpage__heading1{
+        font-size: 4.883rem;
+        margin: 0 0;
+        margin-bottom: 1.8rem;
+        
+    }
+
+    .downloadpage__paragraph{
+        margin: 0 0;
+        margin-bottom: 7.2rem;
+    }
+    .downloadpage__heading2{
+        margin: 0;
+        font-size: 2.5rem;
+    }
+    .downloadpage__img-google{
+        margin-left: 0;
+    }
+
+    .aboutpage__img-phone{
+        width: 38.6rem;
+        height: 52.6rem;
+    }
+
+    .aboutpage__list{
+        gap: 2rem;
+    }
+    .aboutpage__item{
+        width: 57rem;
+        height: 16rem;
+    }
+
+    .aboutpage__item-paragraph{
+        width: auto;
+        margin-left: 5.9rem;
+        display: none;
+    }
+    #aboutpage__item-apragraphdekstop{
+        display: initial;
+        height: auto;
+    }
+    .featurespage__img-app{
+        width: 37.5rem;
+        height: 81.2rem;
+        position: relative;
+        right: 8rem;
+    }
+    .featurespage__list{
+        width: 120rem;
+    }
+
+    .featurespage{
+        padding-bottom: 12rem;
+    }
+
+    .statisticpage__download-container{
+        width: 65rem;
+        height: 50.6rem ;
+    }
+    .statisticpage__paragraph-main{
+        width: 57rem;
+    }
+    .statisticpage__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.8rem;
+        width: 17rem;
+        height: 17rem;
+    }
+    .statisticpage__container>*{
+        margin: 0 !important;
+    }
+    .statisticpage__img-icons{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .statisticpage__paragraph-numbers{
+        font-size: 2.5rem;
+    }
+    .statisticpage__paragraph-text{
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 3rem;
+    }
+    .statisticpage__img-phone{
+        width: 51.6rem;
+        height: 48rem;
+        margin-top: 0rem;
+    }
+
+    .howtousepage__img{
+        width: 77rem;
+        height: 31.9rem;
+    }
+    .howtousepage{
+        padding-top: 10rem;
+    }
+    .howtousepage__heading2,
+    .howtousepage__paragraph{
+        width: 60rem !important;
+        margin-bottom: 2.3rem
+    }
+
+    .customerspage__paragraph-main{
+        width: 60rem;
+    }
+
+    .customerspage__container{
+        width: 77rem;
+        height: 35.7rem;
+
+    }
+    .customerspage__photo{
+        width: 100px;
+        height: 100px;
+        padding-top: 0rem;
+    }
+    .customerspage__name{
+        font-size: 3.125rem;
+        font-weight: 700;
+        line-height: 4.725rem;
+    }
+    .customerspage__post{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    .customerspage{
+        padding-bottom: 11.8rem;
+    }
+
+    .blogpage__container{
+        width: 37rem;
+        min-height: 50rem;
+    }
+    .blogpage__img-blog1,
+    .blogpage__img-blog2,
+    .blogpage__img-blog3{
+        width: 37rem;
+        height: 22.8rem;
+        margin-top: 1rem;
+    }
+    .blogpage__paragraph{
+        max-width: 33.4rem;
+    }
+    .blogpage__contacts{
+        width: 117rem;
+        height: 23rem;
+    }
+    .blogpage__contacts-logoemail,
+    .blogpage__contacts-logophone{
+        width: 10rem;
+        height: 10rem;
+    }
+    .contacts__gmail,
+    .contacts__phone{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .logo__hr{
+        margin: 0 3rem;
+    }
+    #email{
+        width: 28.6rem;
+    }
+}
+
+
+
+
+
+

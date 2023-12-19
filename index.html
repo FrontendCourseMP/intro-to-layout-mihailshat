@@ -9,9 +9,34 @@
 </head>
 <body>
     <header class="header">
+        <div class="header__contacts">
+            <a href="#" class="header__contacts-email">
+                <img src="image/mail-fill.svg" alt="mail" width="18" height="18">
+                <p>info@youremail.com</p>
+            </a>
+            <a href="" class="header__contacts-phone">
+                <img src="image/phone-fill.svg" alt="phone" width="18" height="18">
+                <p>(480) 555-0103</p>
+            </a>
+            <div class="header__messengers">
+                <a href=""><img src="image/facebook-fill-white.svg" alt=""  width="18" height="18"></a>
+                <a href=""><img src="image/instagram-fill.svg" alt="" width="18" height="18"></a>
+                <a href=""><img src="image/twitter-fill.svg" alt="" width="18" height="18"></a>
+                <a href=""><img src="image/youtube-fill.svg" alt="" width="18" height="18"></a>
+            </div>
+        </div>
         <div class="header__container">
-            <button type="button" class="header__buttonburger"><img src="image/burger.svg" alt=""></button>
-            <a href="" class="header__logo"><img src="image/Logo41.png" alt="Appoly"></a>
+            <nav class="header__nav">
+                <button type="button" class="header__buttonburger"><img src="image/burger.svg" alt=""></button>
+                <a href="#Home" class="header__nav-link1">HOME</a>
+                <a href="#About">ABOUT</a>
+                <a href="#Features">FEATURES</a>
+            </nav>
+            <a href="" class="header__logo"><img src="image/Logo41.svg" alt="Appoly"></a>
+            <nav class="header__nav2">
+                <a href="#Screenshot">SCREENSHOT</a>
+                <a href="#Blog">BLOG</a>
+            </nav>
             <a href="" class="header__downloadbutton-link">DOWNLOAD</a>
         </div>
     </header>
@@ -27,82 +52,113 @@
             <img src="image/Free Ui View Mobile App Mockup 1 (1).png" alt="Free Ui View Mobile App Mockup 1" class="downloadpage__img-phone" height="521">
         </section>
         <section class="aboutpage">
-            <h2 id="About">About Our App</h2>
-            <p class="aboutpage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</p>
-            <img src="image/android-smartphone-free-mockup 1 (1).png" alt="android-smartphone-free-mockup 1" class="aboutpage__img-phone" width="238" height="324">
-            <img src="" alt="" class="aboutpage__img-ellipse">
-            <ul class="aboutpage__list">
-                <li class="aboutpage__item">
-                    <img src="image/галочка.svg" alt="marker" class="aboutpage__marker" width="24" height="24">
-                    <h3 class="aboutpage__heading3">Creative design</h3>
-                    <p class="aboutpage__item-paragraph">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-                </li>
-                <li class="aboutpage__item">
-                    <img src="image/галочка.svg" alt="marker" class="aboutpage__marker" width="24" height="24">
-                    <h3 class="aboutpage__heading3">easy to use</h3>
-                    <p class="aboutpage__item-paragraph">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-                </li>
-                <li class="aboutpage__item">
-                    <img src="image/галочка.svg" alt="marker" class="aboutpage__marker" width="24" height="24">
-                    <h3 class="aboutpage__heading3">Best user experince</h3>
-                    <p class="aboutpage__item-paragraph">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-                </li>
-            </ul>
+            <div class="aboutpage__container-text">
+                <h2 id="About">About Our App</h2>
+                <p class="aboutpage__paragraph" id="aboutpage__paragraph-not-phone"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus.</p>
+                <p class="aboutpage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</p>
+            </div>
+            <div class="aboutpage__container-imglist">
+                <img src="image/android-smartphone-free-mockup 1 (1).png" alt="android-smartphone-free-mockup 1" class="aboutpage__img-phone" width="238" height="324">
+                <ul class="aboutpage__list">
+                    <li class="aboutpage__item">
+                        <img src="image/галочка.svg" alt="marker" class="aboutpage__marker" width="24" height="24">
+                        <h3 class="aboutpage__heading3">Creative design</h3>
+                        <p class="aboutpage__item-paragraph">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
+                        <p class="aboutpage__item-paragraph" id="aboutpage__item-apragraphdekstop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.</p>
+
+                    </li>
+                    <li class="aboutpage__item">
+                        <img src="image/галочка.svg" alt="marker" class="aboutpage__marker" width="24" height="24">
+                        <h3 class="aboutpage__heading3">easy to use</h3>
+                        <p class="aboutpage__item-paragraph">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
+                        <p class="aboutpage__item-paragraph" id="aboutpage__item-apragraphdekstop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.</p>
+                    </li>
+                    <li class="aboutpage__item">
+                        <img src="image/галочка.svg" alt="marker" class="aboutpage__marker" width="24" height="24">
+                        <h3 class="aboutpage__heading3">Best user experince</h3>
+                        <p class="aboutpage__item-paragraph">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
+                        <p class="aboutpage__item-paragraph" id="aboutpage__item-apragraphdekstop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         
         <section class="featurespage">
             <h2 id="Features" class="featurespage__heading2">App features</h2>
             <p class="featurespage__paragraph-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</p>
-            <img src="image/comment.svg" alt="Icons/comment" class="featurespage__img">
-            <h3 class="featurespage__heading3">Full free chat</h3>
-            <p class="featurespage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <img src="image/surface1.svg" alt="Icons/browser" class="featurespage__img">
-            <h3 class="featurespage__heading3">unlimiter features</h3>
-            <p class="featurespage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <img src="image/vector.svg" alt="Icons/vector" class="featurespage__img">
-            <h3 class="featurespage__heading3">awsome ui design</h3>
-            <p class="featurespage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <img src="image/App (3).png" alt="App" class="featurespage__img-app">
-            <img src="image/cell-phone.svg" alt="Icons/cell-phone" class="featurespage__img">
-            <h3 class="featurespage__heading3">iso & androind version</h3>
-            <p class="featurespage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <img src="image/eye-scanner 1.svg" alt="Icons/eye-scanner 1" class="featurespage__img">
-            <h3 class="featurespage__heading3">retina ready greaphics</h3>
-            <p class="featurespage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <img src="image/male-telemarketer.svg" alt="Icons/male-telemarketer" class="featurespage__img">
-            <h3 class="featurespage__heading3">24/7 support by real pepole</h3>
-            <p class="featurespage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <ul class="featurespage__list">
+                <li class="featurespage__items1">
+                    <img src="image/comment.svg" alt="Icons/comment" class="featurespage__img">
+                    <h3 class="featurespage__heading3">Full free chat</h3>
+                    <p class="featurespage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class="featurespage__items2">
+                    
+                    <img src="image/surface1.svg" alt="Icons/browser" class="featurespage__img">
+                    <h3 class="featurespage__heading3">unlimiter features</h3>
+                    <p class="featurespage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class="featurespage__items3">
+
+                    <img src="image/vector.svg" alt="Icons/vector" class="featurespage__img">
+                    <h3 class="featurespage__heading3">awsome ui design</h3>
+                    <p class="featurespage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class="featurespage__items4">
+                    <img src="image/app(7).png" alt="App" class="featurespage__img-app">
+
+                </li>
+                <li class="featurespage__items5">
+
+                    <img src="image/cell-phone.svg" alt="Icons/cell-phone" class="featurespage__img">
+                    <h3 class="featurespage__heading3">iso & androind version</h3>
+                    <p class="featurespage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class="featurespage__items6">
+
+                    <img src="image/eye-scanner 1.svg" alt="Icons/eye-scanner 1" class="featurespage__img">
+                    <h3 class="featurespage__heading3">retina ready greaphics</h3>
+                    <p class="featurespage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class="featurespage__items7">
+
+                    <img src="image/male-telemarketer.svg" alt="Icons/male-telemarketer" class="featurespage__img">
+                    <h3 class="featurespage__heading3">24/7 support by real pepole</h3>
+                    <p class="featurespage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+            </ul>
         </section>
         <section class="statisticpage">
-            <h2 class="statisticpage__heading2">Download App  <br> Now</h2>
-            <p class="statisticpage__paragraph-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
-            <a href="" class="statisticpage__link-google"><img src="image/google.png" alt="Get in on Google play" class="statisticpage__img-google" width="149" height="47"></a>
-            <a href="" class="statisticpage__link-apple"><img src="image/appstore.png" alt="Download on the App Store" class="statisticpage__img-apple" width="149" height="47"></a>
-            <div class="statisticpage__main-container">
-                <div class="statisticpage__container">
-                    <img src="image/download-2-fill.svg" alt="Icons/download-2-fill" class="statisticpage__img-icons">
-                    <p class="statisticpage__paragraph-numbers" id="downloads__number">59865</p>
-                    <p class="statisticpage__paragraph-text" id="downloads__text">Download</p>
-                </div>
-                <div class="statisticpage__container">
-                    <img src="image/like.svg" alt="Icons/thumb-up-fill" class="statisticpage__img-icons">
-                    <p class="statisticpage__paragraph-numbers" id="like__number">29852</p>
-                    <p class="statisticpage__paragraph-text" id="like__text">Like</p>
-                </div>
-                <div class="statisticpage__container">
-                    <img src="image/star-fill.svg" alt="Icons/star-fill" class="statisticpage__img-icons">
-                    <p class="statisticpage__paragraph-numbers" id="rating__number">1500</p>
-                    <p class="statisticpage__paragraph-text" id="rating__text">5 star rating</p>
+            <div class="statisticpage__download-container">
+                <h2 class="statisticpage__heading2">Download App  <br> Now</h2>
+                <p class="statisticpage__paragraph-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
+                <a href="" class="statisticpage__link-google"><img src="image/google.png" alt="Get in on Google play" class="statisticpage__img-google" width="149" height="47"></a>
+                <a href="" class="statisticpage__link-apple"><img src="image/appstore.png" alt="Download on the App Store" class="statisticpage__img-apple" width="149" height="47"></a>
+                <div class="statisticpage__main-container">
+                    <div class="statisticpage__container">
+                        <img src="image/download-2-fill.svg" alt="Icons/download-2-fill" class="statisticpage__img-icons">
+                        <p class="statisticpage__paragraph-numbers" id="downloads__number">59865</p>
+                        <p class="statisticpage__paragraph-text" id="downloads__text">Download</p>
+                    </div>
+                    <div class="statisticpage__container">
+                        <img src="image/like.svg" alt="Icons/thumb-up-fill" class="statisticpage__img-icons">
+                        <p class="statisticpage__paragraph-numbers" id="like__number">29852</p>
+                        <p class="statisticpage__paragraph-text" id="like__text">Like</p>
+                    </div>
+                    <div class="statisticpage__container">
+                        <img src="image/star-fill.svg" alt="Icons/star-fill" class="statisticpage__img-icons">
+                        <p class="statisticpage__paragraph-numbers" id="rating__number">1500</p>
+                        <p class="statisticpage__paragraph-text" id="rating__text">5 star rating</p>
+                    </div>
                 </div>
             </div>
             <img src="image/Gravity-Scene-iPhone-12-Mockup 1 (1).png" alt="Gravity-Scene-iPhone-12-Mockup 1" class="statisticpage__img-phone">
-            <img src="" alt="">
         </section>
         <section class="howtousepage">
             <h2 class="howtousepage__heading2">how to use the app perfectly</h2>
             <p class="howtousepage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</p>
             <div class="howtousepage__img-video">
-                <img src="image/Image (1).png" alt="video">
+                <img src="image/videoimg.png" alt="video" width="343" height="150" class="howtousepage__img">
                 <div class="howtousepage__img-button">
                     <img src="image/Vodeo Icon.svg" alt="play button">
                 </div>
@@ -119,7 +175,7 @@
                     <p class="customerspage__blockquote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
                 </blockquote>
             </div>
-            <div class="customerspage__container" id="customerspage__container-notmain1">
+            <!-- <div class="customerspage__container" id="customerspage__container-notmain1">
                 <img src="image/Profile Image (2).png" alt="Profile Image" class="customerspage__photo">
                 <h2 class="customerspage__name">Ann Lubin</h2>
                 <p class="customerspage__post">CO-FUNDER</p>
@@ -150,7 +206,7 @@
                 <blockquote>
                     <p class="customerspage__blockquote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </blockquote>
-            </div>     
+            </div>      -->
             <div class="customerspage__slider">
                 <button class="slider__button"></button>
                 <button class="slider__button"></button>
@@ -162,23 +218,25 @@
         <section class="blogpage" >
             <h2 class="blogpage__heading2" id="Blog">Our recent blog</h2>
             <p class="blogpage__paragraph-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</p>
-            <div class="blogpage__container">
-                <img src="image/Image (2).png" alt="Image" class="blogpage__img-blog1" width="343">
-                <h3 class="blogpage__heading3">The Snap Pixel: How It Works and How to Install</h3>
-                <p class="blogpage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
-                <a href="" class="blogpage__link">Read more</a>
-            </div>
-            <div class="blogpage__container">
-                <img src="image/Image (3).png" alt="Image" class="blogpage__img-blog2" width="343">
-                <h3 class="blogpage__heading3">Global Partner Solutions: A Partnership of Innova</h3>
-                <p class="blogpage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
-                <a href="" class="blogpage__link">Read more</a>
-            </div>
-            <div class="blogpage__container">
-                <img src="image/Image (4).png" alt="Image" class="blogpage__img-blog3" width="343">
-                <h3 class="blogpage__heading3">2021: An opportunity for Snapchatters to start fre</h3>
-                <p class="blogpage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
-                <a href="" class="blogpage__link">Read more</a>
+            <div class="blogpage__manycontainers">
+                <div class="blogpage__container">
+                    <img src="image/Image (2).png" alt="Image" class="blogpage__img-blog1" width="343">
+                    <h3 class="blogpage__heading3">The Snap Pixel: How It Works and How to Install</h3>
+                    <p class="blogpage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
+                    <a href="" class="blogpage__link">Read more</a>
+                </div>
+                <div class="blogpage__container">
+                    <img src="image/Image (3).png" alt="Image" class="blogpage__img-blog2" width="343">
+                    <h3 class="blogpage__heading3">Global Partner Solutions: A Partnership of Innova</h3>
+                    <p class="blogpage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
+                    <a href="" class="blogpage__link">Read more</a>
+                </div>
+                <div class="blogpage__container">
+                    <img src="image/Image (4).png" alt="Image" class="blogpage__img-blog3" width="343">
+                    <h3 class="blogpage__heading3">2021: An oppor-tunity for Snapchatters to start fre</h3>
+                    <p class="blogpage__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
+                    <a href="" class="blogpage__link">Read more</a>
+                </div>
             </div>
             <div class="blogpage__contacts">
                 <img src="image/Email Icon (1).svg" alt="gmail" width="50" class="blogpage__contacts-logoemail">
@@ -190,32 +248,37 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="logo__container">
-            <h2 class="logo__heading">Logo</h2>
-            <p class="logo__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
-            <a href=""><img src="image/facebook-fill.svg" alt="Icons/fill/facebook-fill" width="24"></a>
-            <hr class="logo__hr">
-            <a href=""><img src="image/instagram-fill.svg" alt="Icons/fill/instagram-fill" width="24"></a>
-            <hr class="logo__hr">
-            <a href=""><img src="image/twitter-fill.svg" alt="Icons/fill/twitter-fill" width="24"></a>
-            <hr class="logo__hr">
-            <a href=""><img src="image/youtube-fill.svg" alt="Icons/fill/youtube-fill" width="24"></a>
-        </div>
-        <div class="quicklink__container">
-            <h3 class="quicklink__heading3">quick link</h3>
-            <a href="#About" class="quicklink__link">About</a>
-            <a href="#Features" class="quicklink__link">Features</a>
-            <a href="#Screenshot" class="quicklink__link">Screenshot</a>
-            <a href="#Blog" class="quicklink__link">Blog</a>
-            <a href="grid.html" class="quicklink__link">Grid</a>
-        </div>
-        <div class="newsletter__container">
-            <h3 class="newsletter__heading3">news letter</h3>
-            <p class="newsletter__paragraph">Subscribe our newsletter to get our latest update & news</p>
-            <form class="newsletter__input">
-                <label for="email"><input type="text" id="email" placeholder="Your email address"></label>
-                <button type="submit" class="newsletter__button"><img src="image/send-plane-2-fill.svg" alt="Icons/send-plane-2-fill"></button>
-            </form>
+        <div class="footer-wrapper">
+
+            <div class="logo__container">
+                <h2 class="logo__heading">Logo</h2>
+                <p class="logo__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
+                <a href=""><img src="image/facebook-fill.svg" alt="Icons/fill/facebook-fill" width="24"></a>
+                <hr class="logo__hr">
+                <a href=""><img src="image/instagram-fill.svg" alt="Icons/fill/instagram-fill" width="24"></a>
+                <hr class="logo__hr">
+                <a href=""><img src="image/twitter-fill.svg" alt="Icons/fill/twitter-fill" width="24"></a>
+                <hr class="logo__hr">
+                <a href=""><img src="image/youtube-fill.svg" alt="Icons/fill/youtube-fill" width="24"></a>
+            </div>
+            <div class="quicklink__container">
+                <h3 class="quicklink__heading3">quick link</h3>
+                <nav class="footer__nav">
+                    <a href="#About" class="quicklink__link">About</a>
+                    <a href="#Features" class="quicklink__link">Features</a>
+                    <a href="#Screenshot" class="quicklink__link">Screenshot</a>
+                    <a href="#Blog" class="quicklink__link">Blog</a>
+                    <a href="grid.html" class="quicklink__link">Grid</a>
+                </nav>
+            </div>
+            <div class="newsletter__container">
+                <h3 class="newsletter__heading3">news letter</h3>
+                <p class="newsletter__paragraph">Subscribe our newsletter to get our latest update & news</p>
+                <form class="newsletter__input">
+                    <label for="email"><input type="text" id="email" placeholder="Your email address"></label>
+                    <button type="submit" class="newsletter__button"><img src="image/send-plane-2-fill.svg" alt="Icons/send-plane-2-fill"></button>
+                </form>
+            </div>
         </div>
         <hr class="copyright__hr">
         <div class="copyright__container"> 
