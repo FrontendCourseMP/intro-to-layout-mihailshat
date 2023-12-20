@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__contacts">
+            <a href="mailto:info@youremail.com" class="header__contacts-email">
+                <img src="image/mail-fill.svg" alt="mail" width="18" height="18">
+                <p>info@youremail.com</p>
+            </a>
+            <a href="tel:(480)555-0103" class="header__contacts-phone">
+                <img src="image/phone-fill.svg" alt="phone" width="18" height="18">
+                <p>(480) 555-0103</p>
+            </a>
+            <div class="header__messengers">
+                <a href=""><img src="image/facebook-fill-white.svg" alt=""  width="18" height="18"></a>
+                <a href=""><img src="image/instagram-fill.svg" alt="" width="18" height="18"></a>
+                <a href=""><img src="image/twitter-fill.svg" alt="" width="18" height="18"></a>
+                <a href=""><img src="image/youtube-fill.svg" alt="" width="18" height="18"></a>
+            </div>
+        </div>
+        <div class="header__container">
+            <nav class="header__nav">
+                <button type="button" class="header__buttonburger"><img src="image/burger.svg" alt=""></button>
+                <a href="#Home" class="header__nav-link1">HOME</a>
+                <a href="#About">ABOUT</a>
+                <a href="#Features">FEATURES</a>
+            </nav>
+            <a href="" class="header__logo"><img src="image/Logo41.svg" alt="Appoly"></a>
+            <nav class="header__nav2">
+                <a href="#Screenshot">SCREENSHOT</a>
+                <a href="#Blog">BLOG</a>
+            </nav>
+            <a href="" class="header__downloadbutton-link">DOWNLOAD</a>
+        </div>
+    </header>
+
+    <main>
+        <form action="//httpbin.org/post" method="post" class="form__registration">
+            <fieldset>
+                <legend>Регистрация</legend>
+                <fieldset>
+                    <legend>Личная информация</legend>
+                    <div class="forms">
+                        <label for="firstname">Имя:
+                            <input type="text" name="firstname" id="name" placeholder="Ваше имя:">
+                        </label>
+                    </div>
+                    <div class="forms">
+                        <label for="datebirth">Дата рождения:
+                            <input type="date" id="datebirth" name="datebirth">
+                        </label>
+                    </div>
+                    
+                    <label for="gender">Ваш пол:
+                        <div class="forms">
+                            <input type="radio" name="gender" id="male">
+                            <label for="male">Мужской</label>
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Женский</label>
+                        </div>
+                    </label>
+                    <div class="forms">
+                        <label for="password"><span>Пароль*</span>
+                            <input type="password" id="password"  name="password"  placeholder="Введите пароль:" required>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Контактные данные</legend>
+                    <div class="forms">
+                        <label for="email"><span>Email*</span>
+                            <input type="email" id="email" name="email"  placeholder="Введите email:" required> 
+                        </label>
+                    </div>
+                    <div class="forms">
+                        <label for="phone"><span>Телефон*</span>
+                            <input type="tel" name="phone" id="phone" placeholder="Введите телефон:" required>
+                        </label>
+                    </div>
+                    <div class="forms">
+                        <label for="time"> Удобный интервал для связи
+                            <select name="time" id="time">
+                                <option value="morning">Утро</option>
+                                <option value="dinner">Обед</option>
+                                <option value="evening">Вечер</option>
+                                <option value="night">Ночь</option>
+                            </select>
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="forms__buttons">
+                    <button type="reset" class="forms__buttons-reset">Сбросить форму</button>
+                    <button type="submit" class="forms__buttons-sumbit">Отправить форму</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-wrapper">
+
+            <div class="logo__container">
+                <h2 class="logo__heading">Logo</h2>
+                <p class="logo__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
+                <a href=""><img src="image/facebook-fill.svg" alt="Icons/fill/facebook-fill" width="24"></a>
+                <hr class="logo__hr">
+                <a href=""><img src="image/instagram-fill.svg" alt="Icons/fill/instagram-fill" width="24"></a>
+                <hr class="logo__hr">
+                <a href=""><img src="image/twitter-fill.svg" alt="Icons/fill/twitter-fill" width="24"></a>
+                <hr class="logo__hr">
+                <a href=""><img src="image/youtube-fill.svg" alt="Icons/fill/youtube-fill" width="24"></a>
+            </div>
+            <div class="quicklink__container">
+                <h3 class="quicklink__heading3">quick link</h3>
+                <nav class="footer__nav">
+                    <a href="#About" class="quicklink__link">About</a>
+                    <a href="#Features" class="quicklink__link">Features</a>
+                    <a href="#Screenshot" class="quicklink__link">Screenshot</a>
+                    <a href="#Blog" class="quicklink__link">Blog</a>
+                    <a href="grid.html" class="quicklink__link">Grid</a>
+                    <a href="form.html" class="quicklink__link">Form</a>
+                </nav>
+            </div>
+            <div class="newsletter__container">
+                <h3 class="newsletter__heading3">news letter</h3>
+                <p class="newsletter__paragraph">Subscribe our newsletter to get our latest update & news</p>
+                <form class="newsletter__input">
+                    <label for="email"><input type="text" id="email" placeholder="Your email address"></label>
+                    <button type="submit" class="newsletter__button"><img src="image/send-plane-2-fill.svg" alt="Icons/send-plane-2-fill"></button>
+                </form>
+            </div>
+        </div>
+        <hr class="copyright__hr">
+        <div class="copyright__container"> 
+
+            <img src="image/Group.svg" alt="Icons/copyright-line" width="18" height="18" class="copyright__img">
+            <p class="copyright__text">Copyright 2021 .Ojjomedia. All Right Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

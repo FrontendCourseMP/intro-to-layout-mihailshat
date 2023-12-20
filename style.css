@@ -809,6 +809,7 @@ blockquote{
     line-height: 3rem;
     text-transform: uppercase;
     text-align: center;
+    text-decoration: none;
 }
 
 
@@ -963,7 +964,7 @@ blockquote{
 }
 
 
-#email{
+.email{
     width: 28.6rem;
     height: 5rem;
     border-radius: 4px;
@@ -1008,6 +1009,12 @@ blockquote{
 
 .header__contacts-email{
     display: none;
+}
+.header__contacts-email:hover{
+    text-decoration: none !important;
+}
+.header__contacts-phone:hover{
+    text-decoration: none !important;
 }
 
 .header__contacts-phone{
@@ -1433,7 +1440,7 @@ blockquote{
     .logo__heading{
         margin-top: 0rem;
     }
-    #email{
+    .email{
         width: 16.1rem;
     }
     .quicklink__heading3{
@@ -1495,6 +1502,7 @@ blockquote{
     }
 
     .downloadpage__heading1{
+        line-height: 130%;
         font-size: 4.883rem;
         margin: 0 0;
         margin-bottom: 1.8rem;
@@ -1659,13 +1667,18 @@ blockquote{
     .logo__hr{
         margin: 0 3rem;
     }
-    #email{
+    .email{
         width: 28.6rem;
     }
 }
 
 
 
+a:hover{
+    text-decoration: underline;
+}
 
-
-
+a:focus{
+    border: 3px solid black;
+    border-radius: 10px;
+}
