@@ -76,6 +76,10 @@
     box-sizing: border-box; 
 }
 
+
+::selection{
+    background: var(--heading2-color);
+}
 /* Хедер */
 
 .header {
@@ -164,6 +168,8 @@
 }
 
 .downloadpage__container {
+    position: relative;
+    z-index: 3;
     margin: auto;
     width: 32.3rem;
     height: 31.8rem;
@@ -1032,7 +1038,7 @@ blockquote{
     text-transform: uppercase;
     text-decoration: none;
 }
-#aboutpage__item-apragraphdekstop{
+#aboutpage__item-dekstopparag{
     display: none;
 }
 
@@ -1539,7 +1545,7 @@ blockquote{
         margin-left: 5.9rem;
         display: none;
     }
-    #aboutpage__item-apragraphdekstop{
+    #aboutpage__item-dekstopparag{
         display: initial;
         height: auto;
     }
@@ -1672,13 +1678,71 @@ blockquote{
     }
 }
 
+.header__contacts>a{
+    transition: transform 0.5s;
+}
+.header__contacts>a:hover{
+    transform: scale(90%);
+}
+.header__nav>a,.header__nav2>a{
+    transition: transform 0.5s;
+}
+.header__nav>a:hover,.header__nav2>a:hover{
+    transform: scale(90%);
+}
 
 
 a:hover{
     text-decoration: underline;
 }
 
+
 a:focus{
     border: 3px solid black;
     border-radius: 10px;
 }
+
+a:active{
+    background-color: var(--paragraph-color);
+}
+
+.newsletter__inputt::placeholder{
+    color: var(--heading2-color);
+    font-size: 2rem;
+}
+
+button:hover{
+    border: 3px solid var(--heading2-color);
+}
+
+button:focus{
+    border: 3px solid var(--background2-color);
+}
+
+button:active{
+    background-color: var(--paragraph-color);
+}
+
+@keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(0deg);
+
+    }
+    75%{
+        transform: rotate(-45deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+    
+}
+button:hover{
+    animation: 1s linear rotating infinite;
+}
+

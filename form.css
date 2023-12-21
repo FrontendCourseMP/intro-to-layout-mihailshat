@@ -150,3 +150,49 @@ input:focus{
         font-size: 1.5rem;
     }
 }
+
+.logo__img{
+    width: 10rem;
+    transform: rotate(30deg) scale(150%) skewX(25deg) skewY(25deg);
+}
+
+.pseudo{
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 3rem;
+}
+
+ul>li{
+    width: 25rem;
+    padding-left: 5rem;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+dt::first-letter{
+    font-size: 6rem;
+    color: red;
+}
+dd::after {
+    content: "🛈";
+}
+
+li:nth-child(even){
+    color: var(--heading1-color);
+}
+
+li:nth-child(odd){
+    color: var(--heading2-color);
+}
+
+li input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+input[type="radio"]:checked + label {
+    color: red;
+}

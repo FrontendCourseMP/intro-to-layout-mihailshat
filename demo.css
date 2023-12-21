@@ -1,0 +1,82 @@
+:root {
+    --downloadbuttoon-color: #FFFFFF;
+    --textcolor-color: #FFFFFF;
+    --background1-color: #5956E9;
+    --background2-color: #FFFFFF;
+    --heading1-color: #5956E9;
+    --heading2-color: #232233;
+    --paragraph-color: #6C6C72;
+}
+
+.header {
+    position: relative !important;
+    background-color: var(--background1-color);
+    top: 0rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body footer {
+    position: sticky;
+    top: 30vh;
+}
+
+main {
+    width: 50rem;
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.infinity__animation {
+    padding-top: 46rem;
+    margin: 0 auto;
+}
+
+
+
+
+@keyframes infinity {
+    from {
+        transform: translateX(1200px);
+
+    }
+
+    to {
+        transform: translateX(-1200px);
+    }
+
+}
+
+.infinity__animation-img {
+    animation: infinity 1.5s linear infinite;
+    overflow: hidden;
+}

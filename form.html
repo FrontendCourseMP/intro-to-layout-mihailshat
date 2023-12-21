@@ -51,7 +51,7 @@
                     <legend>Личная информация</legend>
                     <div class="forms">
                         <label for="firstname">Имя:
-                            <input type="text" name="firstname" id="name" placeholder="Ваше имя:">
+                            <input type="text" name="firstname" id="firstname" placeholder="Ваше имя:">
                         </label>
                     </div>
                     <div class="forms">
@@ -103,6 +103,77 @@
                 </div>
             </fieldset>
         </form>
+        <form action="//httpbin.org/post" method="post" class="pseudo">
+            <dl>
+                <dt>Псевдоэлементы</dt>
+                <dd>
+                    Псевдоэлементы — это элементы, которых не существует в HTML-разметке.
+                    Они создаются и позиционируются исключительно при помощи CSS.
+                    Чаще всего используются для создания различных декоративных элементов (которые не несут содержательного смысла).
+                </dd>
+                <dt>Псевдоклассы</dt>
+                <dd>
+                    Псевдоклассы — особый вид селектора, который уточняет тип или состояние. 
+                    Обычно это какой-то качественный признак: 
+                    реакция на наведение курсора, порядок следования и другие.
+                </dd>
+            </dl>
+            <ul type="none">
+                <li><input type="checkbox" id="pseudo1" checked><label for="pseudo1" >:active</label></li>
+                <li><input type="checkbox" id="pseudo2"><label for="pseudo2">:any</label></li>
+                <li><input type="checkbox" id="pseudo3"><label for="pseudo3">:any-link</label></li>
+                <li><input type="checkbox" id="pseudo4" checked><label for="pseudo4">:checked</label></li>
+                <li><input type="checkbox" id="pseudo5"><label for="pseudo5">:default</label></li>
+                <li><input type="checkbox" id="pseudo6"><label for="pseudo6">:defined</label></li>
+                <li><input type="checkbox" id="pseudo7"><label for="pseudo7">:dir()</label></li>
+                <li><input type="checkbox" id="pseudo8"><label for="pseudo8">:disabled</label></li>
+                <li><input type="checkbox" id="pseudo9"><label for="pseudo9">:empty</label></li>
+                <li><input type="checkbox" id="pseudo10"><label for="pseudo10">:enabled</label></li>
+                <li><input type="checkbox" id="pseudo11"><label for="pseudo11">:first</label></li>
+                <li><input type="checkbox" id="pseudo12"><label for="pseudo12">:first-child</label></li>
+                <li><input type="checkbox" id="pseudo13"><label for="pseudo13">:first-of-type</label></li>
+                <li><input type="checkbox" id="pseudo14"><label for="pseudo14">:fullscreen</label></li>
+                <li><input type="checkbox" id="pseudo15" checked><label for="pseudo15" >:focus</label></li>
+                <li><input type="checkbox" id="pseudo16" checked><label for="pseudo16" >:hover</label></li>
+                <li><input type="checkbox" id="pseudo17"><label for="pseudo17">:interminate</label></li>
+                <li><input type="checkbox" id="pseudo18"><label for="pseudo18">:in-range</label></li>
+                <li><input type="checkbox" id="pseudo19"><label for="pseudo19">:invalid</label></li>
+                <li><input type="checkbox" id="pseudo20"><label for="pseudo20">:lang()</label></li>
+                <li><input type="checkbox" id="pseudo21"><label for="pseudo21">:last-child</label></li>
+                <li><input type="checkbox" id="pseudo22"><label for="pseudo22">:last-of-type</label></li>
+                <li><input type="checkbox" id="pseudo23"><label for="pseudo23">:left</label></li>
+                <li><input type="checkbox" id="pseudo24"><label for="pseudo24">:link</label></li>
+                <li><input type="checkbox" id="pseudo25"><label for="pseudo25">:not()</label></li>
+                <li><input type="checkbox" id="pseudo26" checked><label for="pseudo26" >:nth-child()</label></li>
+                <li><input type="checkbox" id="pseudo27"><label for="pseudo27">:nth-last-child()</label></li>
+                <li><input type="checkbox" id="pseudo28"><label for="pseudo28">:nth-last-of-type()</label></li>
+                <li><input type="checkbox" id="pseudo29"><label for="pseudo29">:nth-of-type()</label></li>
+                <li><input type="checkbox" id="pseudo30"><label for="pseudo30">:only-child</label></li>
+                <li><input type="checkbox" id="pseudo31"><label for="pseudo31">:only-of-type</label></li>
+                <li><input type="checkbox" id="pseudo32"><label for="pseudo32">:optional</label></li>
+                <li><input type="checkbox" id="pseudo33"><label for="pseudo33">:out-of-range</label></li>
+                <li><input type="checkbox" id="pseudo34"><label for="pseudo34">:read-only</label></li>
+                <li><input type="checkbox" id="pseudo35"><label for="pseudo35">:read-write</label></li>
+                <li><input type="checkbox" id="pseudo36"><label for="pseudo36">:required</label></li>
+                <li><input type="checkbox" id="pseudo37"><label for="pseudo37">:right</label></li>
+                <li><input type="checkbox" id="pseudo38" checked><label for="pseudo38" >:root</label></li>
+                <li><input type="checkbox" id="pseudo39"><label for="pseudo39">:scope</label></li>
+                <li><input type="checkbox" id="pseudo40"><label for="pseudo40">:target</label></li>
+                <li><input type="checkbox" id="pseudo41"><label for="pseudo41">:valid</label></li>
+            </ul>
+            <ul type="none"
+            style="padding-top: 3rem;">
+                <li><input type="checkbox" id="pseudo42" checked><label for="pseudo42" >::before</label></li>
+                <li><input type="checkbox" id="pseudo43" checked><label for="pseudo43" >::after</label></li>
+                <li><input type="checkbox" id="pseudo44" checked><label for="pseudo44" >::placeholder</label></li>
+                <li><input type="checkbox" id="pseudo45" checked><label for="pseudo45" >::first-letter</label></li>
+                <li><input type="checkbox" id="pseudo46"><label for="pseudo46">::first-line</label></li>
+                <li><input type="checkbox" id="pseudo47" checked><label for="pseudo47" >::selection</label></li>
+                <li><input type="checkbox" id="pseudo48"><label for="pseudo48">::marker</label></li>
+                <li><input type="checkbox" id="pseudo49"><label for="pseudo49">::spelling-error</label></li>
+                <li><input type="checkbox" id="pseudo50"><label for="pseudo50">::grammar-error</label></li>
+            </ul>
+        </form>
     </main>
 
     <footer class="footer">
@@ -110,6 +181,7 @@
 
             <div class="logo__container">
                 <h2 class="logo__heading">Logo</h2>
+                <img src="image/Logo41.svg" alt="Appoly" class="logo__img">
                 <p class="logo__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
                 <a href=""><img src="image/facebook-fill.svg" alt="Icons/fill/facebook-fill" width="24"></a>
                 <hr class="logo__hr">
@@ -128,20 +200,20 @@
                     <a href="#Blog" class="quicklink__link">Blog</a>
                     <a href="grid.html" class="quicklink__link">Grid</a>
                     <a href="form.html" class="quicklink__link">Form</a>
+                    <a href="demo.html" class="quicklink__link">DEMO</a>
                 </nav>
             </div>
             <div class="newsletter__container">
                 <h3 class="newsletter__heading3">news letter</h3>
                 <p class="newsletter__paragraph">Subscribe our newsletter to get our latest update & news</p>
                 <form class="newsletter__input">
-                    <label for="email"><input type="text" id="email" placeholder="Your email address"></label>
+                    <label for="email"><input class="newsletter__input" type="text" id="email" placeholder="Your email address"></label>
                     <button type="submit" class="newsletter__button"><img src="image/send-plane-2-fill.svg" alt="Icons/send-plane-2-fill"></button>
                 </form>
             </div>
         </div>
         <hr class="copyright__hr">
         <div class="copyright__container"> 
-
             <img src="image/Group.svg" alt="Icons/copyright-line" width="18" height="18" class="copyright__img">
             <p class="copyright__text">Copyright 2021 .Ojjomedia. All Right Reserved.</p>
         </div>
