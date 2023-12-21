@@ -114,16 +114,15 @@ main {
 /* ЗАДАНИЕ 3  */
 
 .ram {
-    margin: 20px auto;
+    width: 60%;
     display: grid;
-    grid-template-columns: repeat(8, 200px);
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap: 10px;
 }
 
+
 .ram>div {
     display: grid;
-    grid-template-columns: [link] 1fr;
-    grid-template-rows: [link] 1fr;
 }
 
 
