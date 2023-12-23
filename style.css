@@ -1069,7 +1069,12 @@ blockquote{
     display: none;
 }
 
-@media screen and (min-width:376px) {
+.howtousepage__video-button{
+    background: transparent;
+    border: none;
+}
+
+@media screen and (min-width:374px) {
     .downloadpage{
         background-image: url(image/Background\ Image\ \(5\).png);
     }
@@ -1474,7 +1479,7 @@ blockquote{
         margin-top: 0rem;
     }
     #email{
-        width: 16.1rem;
+        width: 22.1rem;
     }
     .quicklink__heading3{
         
